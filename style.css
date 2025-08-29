@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap'); /* se le obliga a cada compu tener la tipografía */
+
+
+html, body { /* omo no tiene nada la inicio, solo está buscando a este elemento */
+  margin: 0;
+  padding: 0;
+  background: #E4A1DF;
+  color: #4C0529; /* de la tipografía */
+  font-family: Helvetica, Arial, sans-serif;
+
+} /* todo esto es parte de solo el body, se aplica solo ahí */
+
+a{ /* significa que todos los vídulos vana  tener rstas carateríticas */
+  color: white;
+  font-weight: bold;
+  text-decoration: none; /* si le pongo el none significa que no tiene la línea de abajo*/
+}
+
+a:hover{ /* es cuando pongo el cursor arriba hay un cambio. "hover" significa que el elemento está en una situación particular */
+  color: blueviolet;
+  text-decoration: underline;
+  transition: all ease 2s;
+}
+
+a:hover:after{ 
+  content:" -‧°𐐪♡𐑂°‧-";
+}
+
+#bloque{ /* la cambio el nombre de main a !bloque" par solo hacer el cambio a eese main. puedo tener otro main y este no va a cambiar por su id */
+  margin: 5rem;
+  padding: 8rem;
+  background: rgba(255, 255, 255, .2); /* el .2 es la trasperencia que color 20% */
+  border-radius: 1rem;
+  box-shadow: 0 0 30px white;
+}
+
+h1,h2, span.pixel{ /* la "coma" significa que tando al h1, h1 también se lo cambia al span. Sin la "coma" significa que es el span del h1  */
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+span.pixel{ /* el punto es del class, que el final es el nombre de la etiqueta que debe de estar en el html */
+  color: #f00;
+  font-size: 80%;
+}
+
+h1{ 
+  font-size: calc(2rem + 5vw); /* en este caso el tamaño se va calculando  */
+}
+
+h2{
+  font-size: calc(1rem + 2vw);
+}
+#bloque {
+    position: absolute; /* esto lo que hace es dejar centrado el bloque */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* este hace que quede justo a la mitad */
+    width: 80%; /* al ancho se le sumara el padding, por lo tanto se le suma 1% por lo que el valor final del ancho es 82% */
+    /* para calcular diferentes unidades de medida, le pido al sistema que calcule, calc(80% - 4rem) por ejemplo, y esto lo calculará solo.
+    puede ser con cm, px, o la medida que yo quiera */
+    margin: auto; /* aqui tambien dejamos que el sistema se encargue, por eso queda en automatico
+    padding: 1%; /* suma 82% ya que se le suma 1% por lado */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    box-shadow: 0 0 30px white;
+    z-index: 9999;
+}
+
+
+/*canvas {
+  display: block;
+}*/
